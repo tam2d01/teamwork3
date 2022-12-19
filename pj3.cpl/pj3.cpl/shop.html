@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/body.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.js">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/header.css">
+    <link rel="stylesheet" href="./assets/var.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    
+</head>
+<!--header logo-->
+<header id="header-nav">
+    <div class="logo-brand">
+        <a target="_top" href="#"><img src="./assets/img/logo/Animated-Petshop-Logo-removebg-preview.png" width="10px" height="auto">
+        </a>
+    </div>
+    <nav>
+        <ul class="main-menus" id="btn-menus">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html" onclick="shop()" style="color: rgb(202, 51, 51); font-size: 25px;">shop</a></li>
+            <li><a href="about.html" onclick="about()">AboutUs</a></li>
+            <li><a href="contac.html" onclick="contact()">Contact</a></li>
+            <li><a href="blog.html" onclick="blog()">Blog</a></li>
+        </ul>
+    </nav>
+    <label for="nav-mobile-input" class="nav__bars-btn" id="toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+            </path>
+        </svg>
+    </label>
+    <input type="checkbox" class="nav-input" id="nav-mobile-input">
+    <!--coating-->
+    <div class="nav-mobile-overlay"></div>
+    <!--menus mobile-->
+    <div class="nav-mobile">
+        <label for="nav-mobile-input" class="nav-mobile-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <!-- Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z">
+                </path>
+            </svg>
+        </label>
+        <ul class="menu__mobile-list">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html" onclick="shop()">shop</a></li>
+            <li><a href="about.html" onclick="about()">AboutUs</a></li>
+            <li><a href="contac.html" onclick="contact()">Contact</a></li>
+            <li><a href="blog.html" onclick="blog()">Blog</a></li>
+        </ul>
+    </div>
+    <!--header icon-->
+    <div class="menus-icon">
+        <a href="#" class="icon-shopping" onclick="myShopping()">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icon-user" onclick="myUse()">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="#" class="icon-bell" onclick="myBell()">
+            <i class="fa fa-bell" aria-hidden="true"></i>
+        </a>
+    </div>
+</header>
+<!--end of header-->
+<body style="background-color: #f4f4f4;">
+    <div id="product-1" class="section-1">
+        <h2 >Featured Product</h2>
+        <p>December best selling products</p>
+        <div>
+            <i class="fa-sharp fa-solid fa-bag-shopping" id="cart-icon"
+                style="color: rgb(36, 37, 37); font-size: 60px; margin-top: 50px; cursor: pointer;"></i>
+        </div>
+    </div>
+    <div id="product-1" class="section-1">
+        
+        <div class="container-1">
+            <div class="product">
+                <img src="./assets/img/photo-1532616934112-95f7d1d49e8c.avif" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>DachShund</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/istockphoto-1397087783-170667a.jpg" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>Alaska</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$650</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/istockphoto-1263003236-170667a.jpg" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>Samoyed</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$700</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/photo-1600369671738-fa3a43efeced.avif" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>PitBull</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/photo-1537151608828-ea2b11777ee8.avif" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>Corgi</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$900</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/photo-1555325084-b068599743c9.avif" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>Poodle</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$700</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/istockphoto-1388922527-170667a.jpg" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>Poremanian</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$800</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/photo-1617218326259-2a338a730d1c.avif" alt="">
+                <div class="des">
+                    <span>Purebred</span>
+                    <h5>Chihuahua</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__wrapper">
+            <!--Getting Started Intro Content-->
+            <div class="noi-dung about">
+                <h2>About us</h2>
+                <p>
+                <p>Follow us on social media for more details and updates.</p>
+                </p>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+                </ul>
+            </div>
+            <!--End of Introduction-->
+            <!--Start Link Content-->
+            <div class="noi-dung-links">
+                <h2>Path</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Policy Conditions</a></li>
+                </ul>
+            </div>
+            <!--End of Introduction-->
+            <!--Where to Get Contact Content-->
+            <div class="noi-dung-contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>1st Street<br />
+                            District 1, Ho Chi Minh City<br />
+                            Vietnam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 456 789</a>
+                            <br />
+                            <a href="#">+84 123 456 789</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">diachiemail@gmail.com</a></p>
+                    </li>
+                    <li>
+                        <form class="form" action="#">
+                            <input type="email" class="form__field" placeholder="Get more info..." />
+                            <button type="button" class="btn btn--primary  uppercase">Send</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--End of Contact Content-->
+        </div>
+        <div class="copyright text-center">
+            <p> ©Copyright 2022 | Pham Tam and Tuan Anh | All rights.</p>
+        </div>
+    </footer>
+
+</body>
+<!--Getting Started with Javascript-->
+<div id="app-js">
+    <script src="./assets/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- handle menus-->
+    <script>
+        $(document).ready(function () {
+            $('.nav__bars-btn').click(function () {
+                $('.nav-mobile-overlay').toggle();
+            });
+        })
+        $(document).ready(function () {
+            $('.nav__bars-btn').click(function () {
+                $('.nav-mobile').slideToggle();
+            });
+        })
+
+        $(document).ready(function () {
+            $('.nav-mobile-close').click(function () {
+                $('.nav-mobile-overlay').toggle();
+            });
+        })
+        $(document).ready(function () {
+            $('.nav-mobile-close').click(function () {
+                $('.nav-mobile').slideToggle();
+            });
+        })
+    </script>
+</div>
+
+</html>

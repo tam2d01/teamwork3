@@ -145,7 +145,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 50px;
+    gap: 100px;
 }
 .footer .footer__wrapper .noi-dung.about{
     width: 40%;

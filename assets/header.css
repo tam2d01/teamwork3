@@ -341,13 +341,13 @@ footer{
     /* max-width : 480px */
     @media (max-width : 480px){
         .logo-brand{
-            margin-left:-6rem ;
+            margin-left:0;
         }
         .nav__bars-btn{
-            margin-left: -2rem;
+            margin-left:0;
         }
         .menus-icon{
-            margin-left: -1rem;
+            margin-left:0;
         }
     }
 /* Responsive Cho Footer */

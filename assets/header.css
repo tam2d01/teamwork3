@@ -341,7 +341,7 @@ footer{
     /* max-width : 480px */
     @media (max-width : 480px){
         .logo-brand{
-            margin-left:-1rem;
+            margin-left:-3rem;
         }
         .nav__bars-btn{
             margin-left:-2rem;

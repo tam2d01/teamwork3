@@ -81,7 +81,6 @@ font-weight: 300;
     font-weight: 500;
 }
 .contact-form .input-box {
-    position: relative;
     width: 100%;
     margin-top: 10px;
 }
@@ -135,10 +134,10 @@ font-weight: 300;
 
 @media screen and (max-width: 768px) {
     .content {
-        margin-left: -6rem;
+        margin-left: 2rem;
     }
     .contact {
-        padding: 75px;
+        padding: 10%;
     }
     .container {
         flex-direction: column;
@@ -149,11 +148,10 @@ font-weight: 300;
         width: 100%;
     }
     .container .contact-info {
-       
         width: 100%;
         margin-bottom: 40px;
     }
     .contact-form .input-box input[type="submit"]{
-        margin-left: 60px;
+        margin-left: 0;
     }
 }

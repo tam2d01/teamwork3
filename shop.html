@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./assets/header.css">
     <link rel="stylesheet" href="./assets/var.css">
     <link rel="stylesheet" href="./assets/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/assets/app.js"></script>
     
 </head>
 <!--header logo-->
@@ -24,17 +27,17 @@
     <nav class="navbar">
         <div class="inner-width">
             <a href="#" class="logo">
-                <img src="./assets/img/Animated-Petshop-Logo-removebg-preview.png" alt="Logo">
+                <img src="/assets/img/logo/Animated-Petshop-Logo-removebg-preview.png" alt="Logo">
             </a>
             <!--coating-->
             <div class="nav-mobile-overlay"></div>
             <!--menus-->
             <ul class="nav-menus">
-                <a href="#" title="Home" class="active">Home</a>
-                <a href="#" title="Shop">Shop</a>
-                <a href="#" title="About Us">About Us</a>
-                <a href="#" title="Blog">Blog</a>
-                <a href="#" title="contact">Contact</a>
+                <a href="/index.html" title="Home" class="active">Home</a>
+                <a href="/shop.html" title="Shop">Shop</a>
+                <a href="/about.html" title="About Us">About Us</a>
+                <a href="/blog.html" title="Blog">Blog</a>
+                <a href="/contac.html" title="contact">Contact</a>
             </ul>
             <!--icon-->
             <div class="nav-icon">
@@ -271,31 +274,6 @@
 <!--Getting Started with Javascript-->
 <div id="app-js">
     <script src="./assets/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <!-- handle menus-->
-    <script>
-        $(document).ready(function () {
-            $('.nav__bars-btn').click(function () {
-                $('.nav-mobile-overlay').toggle();
-            });
-        })
-        $(document).ready(function () {
-            $('.nav__bars-btn').click(function () {
-                $('.nav-mobile').slideToggle();
-            });
-        })
-
-        $(document).ready(function () {
-            $('.nav-mobile-close').click(function () {
-                $('.nav-mobile-overlay').toggle();
-            });
-        })
-        $(document).ready(function () {
-            $('.nav-mobile-close').click(function () {
-                $('.nav-mobile').slideToggle();
-            });
-        })
-    </script>
 </div>
 
 </html>
